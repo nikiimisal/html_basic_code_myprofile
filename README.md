@@ -6,7 +6,7 @@ In this post, I demonstrate how to deploy a static website using an EC2 instance
 
 <h1>Here's a quick and easy step-by-step guide:</h1>
 
-Step 1: Launch EC2 Instance. Select Amazon Linux 2 as the operating system.
+Step 1: Launch EC2 Instance. Select Amazon Linux as the operating system.
 
 Step 2: Configure Security Group
 Allow HTTP (80), HTTPS (443), and SSH (22) ports.
@@ -39,20 +39,21 @@ Step 4: Install and Configure Apache
        "sudo systemctl status nginx"
  
 V. Create HTML File: 
- "vim index.html"
+ "via index.html"
 
+<br>
+Step 5: Move HTML File or create file in that derectory.<br>
+ Copy the file to the Apache/Nginx directory: <br>
+ "sudo cp index.html /var/www/html/"<br>
+ "sudo cp index.html /usr/share/nginx/html/"<br>
 
-Step 5: Move HTML File or create file in that derectory.
- Copy the file to the Apache/Nginx directory: 
- "sudo cp index.html /var/www/html/"
- "sudo cp index.html /usr/share/nginx/html/"
+Step 6: Create a Symlink<br>
+  Point to the file directory.<br>
+ " sudo systemctl enable httpd "<br>
+  " sudo systemctl enable nginx "<br>
 
-Step 6: Create a Symlink
-  Point to the file directory.
- " sudo systemctl enable httpd "
-  " sudo systemctl enable nginx "
-
-Step 7: Access Your Website
-Open your browser, type http://<your-public-ip>, and hit Enter.
-
+Step 7: Access Your Website<br>
+Open your browser, type http://<your-public-ip>, and hit Enter.<br>
+<br>
+<br>
 Your static website is now live! 🚀
