@@ -43,14 +43,20 @@ V. Create HTML File:
 
 <br>
 Step 5: Move HTML File or create file in that derectory.<br>
+<br>
  Copy the file to the Apache/Nginx directory: <br>
+ <br>
  "sudo cp index.html /var/www/html/"<br>
+ <br>
  "sudo cp index.html /usr/share/nginx/html/"<br>
 
 Step 6: Create a Symlink<br>
+<br>
   Point to the file directory.<br>
- " sudo systemctl enable httpd "<br>
-  " sudo systemctl enable nginx "<br>
+  <br>
+
+     " sudo systemctl enable httpd "<br>
+     " sudo systemctl enable nginx "<br>
 
 Step 7: Access Your Website<br>
 Open your browser, type http://<your-public-ip>, and hit Enter.<br>
