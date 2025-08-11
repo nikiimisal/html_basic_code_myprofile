@@ -47,9 +47,8 @@ Step 5: Move HTML File or create file in that derectory.<br>
  Copy the file to the Apache/Nginx directory: <br>
  <br>
  "sudo cp index.html /var/www/html/"<br>
- <br>
  "sudo cp index.html /usr/share/nginx/html/"<br>
-
+<br>
 Step 6: Create a Symlink<br>
 <br>
   Point to the file directory.<br>
@@ -59,7 +58,7 @@ Step 6: Create a Symlink<br>
      " sudo systemctl enable nginx "<br>
 
 Step 7: Access Your Website<br>
-Open your browser, type http://<your-public-ip>, and hit Enter.<br>
+Open your browser, type http://localhost, and hit Enter.<br>
 <br>
 <br>
 Your static website is now live! 🚀
